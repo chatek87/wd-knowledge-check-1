@@ -48,7 +48,10 @@ body {
 }
 
 .hero-container {
-    display: block;
+    display: flex;
+    /* 2. center hero div */
+    justify-content: center;
+    align-items: center;
     background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-546819.jpg&fm=jpg') center center no-repeat;
     background-size: cover;
     height: 80vh;
@@ -69,6 +72,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(/img/1920px-Rock_hyrax_at_Cape_of_Good_Hope.jpg) center center no-repeat;
+    background-size: cover;
     padding: 48px 0;
 }
 
@@ -105,6 +110,14 @@ body {
 .projects-item {
     
 }
+.contact-container {
+    background: #232443;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+}
+
 
 .footer-container {
     background: #1b1b27;
@@ -178,7 +191,9 @@ a:hover, a:active {
     border: 2px solid #333333;
 }
 .hero-content .btn:hover, .hero-content .btn:active {
-    background: #333333;
+    /* 3. change hero btn hover color */
+    /* background: #333333; */
+    background: #4a412a; /* pantone 448c the ugliest color in the world */
     color: #F1F1F1;
     border: 2px solid #666666;
 }
