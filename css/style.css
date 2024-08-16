@@ -107,18 +107,37 @@ body {
     padding: 12px;
 }
 
-.projects-item {
-    
-}
+
 .contact-container {
-    background: #232443;
+    background: #0a7232;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 48px 0;
 }
-
-
+.contact-title {
+    margin-bottom: 20px;
+}
+.contact-content {
+    color: #F1F1F1;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .footer-container {
     background: #1b1b27;
     display: flex;
@@ -338,6 +357,13 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    .contact-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: auto;
     }
 
     .main-nav {
